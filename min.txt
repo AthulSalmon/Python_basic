@@ -1,0 +1,28 @@
+LIMIT
+select columns name from table name where condition limit ;
+
+MIN,MAX,AVG,COUNT
+select min(column name) from table name where condition;
+
+IN
+select columns name from table name where condition in (values)
+
+BEETWEEN
+select columns name from table name where column name between value1 and value 2
+
+To delete database
+drop database database name
+eg :- drop database aug_27
+
+To delete table
+drop table table name
+eg :- drop table student
+
+
+Add an column in existing table
+alter table table name add column name datatype.....;
+eg:-alter table student add phn int;
+
+Remove a column 
+alter table table name drop column name
+eg:-alter table student drop phn;

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title style="color: red;">Student Registration Form</title>
+</head>
+<!-- <style>
+    table{
+        background-color: aquamarine;
+        text-align: center;
+        color: black;
+    } 
+     /* *{
+background-color: rgb(255, 8, 8);
+text-align: center;
+text-shadow: 0cqi;
+     } */
+     td{
+         background-color: rgb(23, 209, 209);
+     }
+     th{
+        background-color: rgb(12, 113, 201);
+     }
+</style> -->
+<body>
+    <center><h2>Student Registration Form</h2></center>
+    <center> 
+        <table style="background-color: blue; color: white;">
+            <tr>
+                <td><b>First Name</b></td>
+                <td>
+                    <input type="text" name="fname" placeholder="Enter your First name" pattern="[a-zA-Z]+" required>
+                    (Max 30 characters, a-z, A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td><b>Last Name</b></td>
+                <td>
+                    <input type="text" name="lname" placeholder="Enter your Last name" pattern="[a-zA-Z]+" required>
+                    (Max 30 characters, a-z, A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td><b>Date of Birth</b></td>
+                <td>
+                    <select name="day" required>
+                        <option value="">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <!-- Add other days as needed -->
+                    </select>
+                    <select name="month" required>
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select name="year" required>
+                        <option value="">Year</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <!-- Add other years as needed -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Email</b></td>
+                <td>
+                    <input type="email" name="email" placeholder="Enter your Email" required>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Mobile Number</b></td>
+                <td>
+                    <input type="text" name="mobile" placeholder="Enter your Mobile Number" pattern="\d{10}" required>
+                    (10-digit number)
+                </td>
+            </tr>
+            <tr>
+                <td><b>Gender</b></td>
+                <td>
+                    <input type="radio" name="Gender" value="m" >Male
+                    <input type="radio" name="Gender" value="f" >Female
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><b>Address</b></td>
+                <td>
+                    <textarea name="address" placeholder="Enter your Address" rows="3" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><b>City</b></td>
+                <td>
+                    <input type="text" name="city" placeholder="Enter your City" pattern="[a-zA-Z]+" required>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Pincode</b></td>
+                <td>
+                    <input type="text" name="pincode" placeholder="Enter your Pincode" pattern="\d{6}" required>
+                </td>
+            </tr>
+            <tr>
+                <td><b>State</b></td>
+                <td>
+                    <input type="text" name="state" placeholder="Enter your State" pattern="[a-zA-Z]+" required>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Country</b></td>
+                <td>
+                    <input type="text" name="country" value="India">
+                </td>
+            </tr>
+            <tr>
+                <td><b>Hobbies</b></td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="Reading"> Reading
+                    <input type="checkbox" name="hobbies" value="Traveling"> Traveling
+                    <input type="checkbox" name="hobbies" value="Cooking"> Cooking
+                    <input type="checkbox" name="hobbies" value="Gaming"> Gaming
+                    <br>Other: <input type="text" name="other_hobby">
+                </td>
+            </tr>
+            <tr>
+                <td><b>Qualification</b></td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>Sl. No</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Class 10</td>
+                            <td><input type="text" name="class10_percentage" placeholder="%" required></td>
+                            <td><input type="text" name="class10_year" placeholder="Year" required></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Class 12</td>
+                            <td><input type="text" name="class12_percentage" placeholder="%" required></td>
+                            <td><input type="text" name="class12_year" placeholder="Year" required></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text" name="graduation_percentage" placeholder="%" required></td>
+                            <td><input type="text" name="graduation_year" placeholder="Year" required></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td><input type="text" name="masters_percentage" placeholder="%" required></td>
+                            <td><input type="text" name="masters_year" placeholder="Year" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td><td>
+                                
+                            </td>
+                            <td>(10 char max)</td>
+                            <td>(upto 2 decimal
+                                )</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Courses Applied for</b></td>
+                <td>
+                    <input type="radio" name="course" value="b" >Bca
+                    <input type="radio" name="course" value="bc" >B.com
+                    <input type="radio" name="course" value="bs" >B.Sc
+                    <input type="radio" name="course" value="ba" >B.A
+                    
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="submit" value="reset">
+    </center>
+</body>
+</html>
